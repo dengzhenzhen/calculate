@@ -62,3 +62,6 @@ def calculate_(s):
     return operands[0]
 
 print(calculate_(input()))
+
+
+
