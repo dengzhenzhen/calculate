@@ -20,7 +20,7 @@ def mutidiv(s):
     else:
         return mutidiv(s.split('//',1)[0]) // mutidiv(s.split('//',1)[1])
 
-s = '5485-9459*785+5424//748237*85'
+
 
 def calculate_(s):
     flag = re.compile('[\+\-\*]|//')
@@ -61,7 +61,7 @@ def calculate_(s):
 
     return operands[0]
 
-print(calculate_(input()))
+
 
 
 
