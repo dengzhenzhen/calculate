@@ -1,5 +1,6 @@
 import re
 
+
 #-----------找到当前的优先运算符--------------------------------------
 def FindPrioritizedOpetator(operators):
     if len(set(['*','/','//']) & set(operators) ) > 0:
@@ -53,7 +54,3 @@ def calculate(operation):
         operators.pop(CurrentStep['index'])
     return operands[0]
 
-#test
-s = input()
-print(calculate(s))
-print(eval(s))
